@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oliver's Discord Bot Dictionary</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    h1 {
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 3rem;
+      color: #1db954;
+      text-shadow: 0 0 8px #1db954aa;
+    }
+    .bot-card-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      max-width: 960px;
+    }
+    .bot-card {
+      background: #181818;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgb(0 0 0 / 0.7);
+      width: 280px;
+      text-align: center;
+      padding: 30px 20px 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .bot-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 16px 32px rgb(29 185 84 / 0.6);
+    }
+    .bot-figure {
+      margin: 0;
+      width: 144px;
+      height: 144px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 15px #1db954aa;
+      margin-bottom: 24px;
+      flex-shrink: 0;
+    }
+    .bot-figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .bot-name {
+      font-size: 1.6rem;
+      color: #1db954;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: 1.1px;
+    }
+    .bot-desc {
+      font-size: 1rem;
+      color: #bbbbbb;
+      margin-bottom: 26px;
+      line-height: 1.4;
+      min-height: 68px;
+    }
+    .btn-try {
+      background-color: #1db954;
+      border: none;
+      border-radius: 50px;
+      color: #121212;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 12px 28px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px #1db954cc;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      user-select: none;
+    }
+    .btn-try:hover,
+    .btn-try:focus {
+      background-color: #17a64a;
+      box-shadow: 0 6px 20px #17a64aee;
+      outline: none;
+      text-decoration: none;
+      color: #121212;
+    }
+    @media (max-width: 650px) {
+      .bot-card-container {
+        flex-direction: column;
+        gap: 28px;
+      }
+      .bot-card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Oliver's Discord Bot Dictionary</h1>
+  <section class="bot-card-container" aria-label="Discord Bots List">
+    <article class="bot-card" role="region" aria-labelledby="bella-name">
+      <figure class="bot-figure">
+        <img src="Untitled1472_20250321235823.png" alt="Bella Musix Bot Profile Picture" />
+      </figure>
+      <h2 id="bella-name" class="bot-name">Bella Musix Bot</h2>
+      <p class="bot-desc">A powerful music bot to elevate your Discord music experience with rich commands and functionality.</p>
+      <a class="btn-try" href="/bellamusix.html" aria-label="Try Bella Musix Bot Website">Try Bella Musix Bot</a>
+    </article>
+
+    <article class="bot-card" role="region" aria-labelledby="olive-name">
+      <figure class="bot-figure">
+        <img src="https://cdn.discordapp.com/attachments/1385741129777021050/1402163637262483516/olivemusic.png?ex=689392e6&is=68924166&hm=832143657860dc2e6c38661530ab2c831b502d4e687171e9ba8d0cf545375ae2&" alt="Olive Music Bot Profile Picture" />
+      </figure>
+      <h2 id="olive-name" class="bot-name">Olive Music Bot</h2>
+      <p class="bot-desc">Smooth and easy-to-use music playback bot designed to bring a fresh vibe to your Discord server.</p>
+      <a class="btn-try" href="olivemusic.html" aria-label="Try Olive Music Bot Website">Try Olive Music Bot</a>
+    </article>
+  </section>
+</body>
+</html>
